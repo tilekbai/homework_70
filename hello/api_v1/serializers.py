@@ -7,4 +7,9 @@ class ArticlesListSerializer(serializers.ModelSerializer):
         model = Article
         fields = ("id", "title", "author")
 
-        
+
+class ArticleDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Article
+        fields = ("title", "content")
+
